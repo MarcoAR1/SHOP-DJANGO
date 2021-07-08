@@ -1,0 +1,9 @@
+DELETE  http://127.0.0.1:8000/product/3/
+Content-Type: application/json
+
+{
+    "name":"Billetera",
+    "description":"soy una billetara",
+    "model":"slimteasd",
+    "image":"soy una imagen de billetera"
+}
