@@ -1,0 +1,51 @@
+.carouselContainer {
+  margin: auto;
+  margin-top: 150px;
+  width: 90%;
+  min-width: 420px;
+  height: 19rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+.carouselContainerRelative {
+  position: relative;
+  display: flex;
+  width: 95%;
+  min-width: 420px;
+  height: 19rem;
+  overflow: hidden;
+}
+.carouselItems {
+  position: absolute;
+  display: flex;
+  justify-content: flex-start;
+  left: 0;
+  top: 0;
+}
+.carouselContainer .CardProductContainer {
+  transform: scale(0.8);
+  transition: transform 0.2s;
+  z-index: 2;
+}
+.carouselContainer .CardProductContainer:hover {
+  transform: none;
+  z-index: 3;
+}
+.carouselContainerNextAndPrev {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  justify-content: space-between;
+}
+.carouselContainerNextAndPrev button{
+  z-index: 2;
+}
+.carouselContainerNextAndPrev svg {
+  fill: black;
+  width: 4rem;
+  height: 4rem;
+  z-index: 50000;
+}

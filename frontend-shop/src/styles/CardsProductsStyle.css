@@ -1,0 +1,103 @@
+.CardProductContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 0 0.8rem;
+  width: 272;
+  height: 372;
+}
+
+.CardProductName {
+  text-align: center;
+  font-size: 0.8rem !important;
+  padding: 0.5rem;
+}
+.CardProductImgAndButtons {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem;
+  width: 10rem;
+}
+.CardProductOnlyImgSpace {
+  position: relative;
+  height: 9rem;
+  width: 9rem;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+.CardProductOnlyImg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  transition: none;
+}
+.CardProductOnlyImg img {
+  background-color: white;
+  height: 9rem;
+  width: 9rem;
+  object-fit: cover;
+}
+
+.CardProductNextAndPrev {
+  position: absolute;
+  top: 50%;
+  display: flex;
+  justify-content: space-between;
+  width: 98%;
+  opacity: 0;
+  transition: opacity 0.32s;
+}
+
+.CardProductImgAndButtons:hover .CardProductNextAndPrev {
+  opacity: 1;
+}
+.CardProductPricesAndButton {
+  display: flex;
+  margin: auto;
+  width: 80%;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  align-items: center;
+}
+
+.CardProductPricesAndButton div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.CardProductPricesAndButton button {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  background-color: #7b0dfd;
+  cursor: pointer;
+  font-size: 0.5rem;
+  text-transform: uppercase;
+  box-shadow: inset 0 0 1rem rgba(255, 255, 255, 0);
+  -webkit-transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+  transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+  height: 1.5rem;
+}
+
+.CardProductButton {
+  display: flex;
+  flex-direction: column;
+}
+
+.CardProductPricesAndButton button:last-child {
+  background-color: #0d9ffd;
+  margin-top: 0.5rem;
+}
+.CardProductPricesAndButton button:hover {
+  box-shadow: inset 0 0 1rem #7b0dfd, 0 0 1rem #7b0dfd;
+  text-shadow: 1px 1px 2px #7b0dfd;
+}
+.CardProductPricesAndButton button:last-child:hover {
+  box-shadow: inset 0 0 1rem #0d9ffd, 0 0 1rem #0d9ffd;
+  text-shadow: 1px 1px 2px #0d9ffd;
+}
